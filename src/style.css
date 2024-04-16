@@ -1,15 +1,17 @@
 * {
     font-family: "Noto Sans TC";
-    font-size: 14px;
+    font-size: 13px;
+    color: #666;
 }
 
 hr {
     margin-top: 1em;
     margin-bottom: 1em;
     border: none;
-    color: black;
-    background-color: black;
-    height: 6px;
+    color: #333;
+    background-color: #333;
+    height: 4px;
+    border-radius: 1em;
 }
 
 .Container {
@@ -27,6 +29,7 @@ hr {
 .TitleName {
     font-size: 36px;
     font-weight: 900;
+    color: #333;
 }
 
 .Contacts {
@@ -41,6 +44,11 @@ hr {
     align-items: center;
 }
 
+.ContactName {
+    font-weight: bold;
+    color: #333;
+}
+
 .Icon {
     width: 1em;
     height: 1em;
@@ -48,21 +56,41 @@ hr {
 
 .SectionTitle {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 0.25em;
+    color: #333;
 }
 
 .SectionTitle::before {
     content: "█▓▒░ ";
 }
 
-.ExpTitle {
-    font-size: 18px;
-    font-weight: bold;
+.ExpTitleBlock {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-bottom: 0.1em;
+}
+
+.ExpTitle {
+    display: flex;
+    align-items: center;
+}
+
+.ExpPosition {
+    font-size: 18px;
+    font-weight: 800;
+    color: #333;
+}
+
+.ExpDescription::before {
+    content: "•";
+}
+
+.ExpDescription {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
 }
 
 .ExpTail {
@@ -74,7 +102,7 @@ hr {
 }
 
 .ExpDate {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
     font-style: italic;
 }
