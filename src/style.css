@@ -62,12 +62,21 @@ hr {
 .SectionTitle {
     font-size: 24px;
     font-weight: 800;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
     color: #333;
+    display: flex;
+    align-items: center;
 }
 
 .SectionTitle::before {
-    content: "█▓▒░ ";
+    content: "";
+    margin-top: 0.1em;
+    display: inline-block;
+    width: 8px;
+    height: 1em;
+    background-color: #333;
+    border-radius: 3px;
+    margin-right: 12px;
 }
 
 .ExpTitleBlock {
@@ -115,4 +124,53 @@ hr {
 .Content {
     margin-bottom: 0.75em;
     text-align: justify;
+}
+
+/* RWD modifications */
+@media screen and (max-width: 768px) {
+    .TitleName {
+        font-size: 24px;
+    }
+
+    .SectionTitle {
+        font-size: 20px;
+    }
+
+    .Container {
+        padding: 0 8px;
+    }
+
+    .TitleBlock {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .ExpTitleBlock {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .ExpTitle {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ExpDescription::before {
+        content: none;
+    }
+
+    .ContactItem {
+        grid-template-columns: 24px 60px 1fr;
+        gap: 8px;
+    }
+
+    .ContactItem a {
+        word-break: break-word;
+    }
+
+    .ExpTail {
+        justify-content: flex-start;
+        width: 100%;
+    }
 }
