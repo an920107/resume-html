@@ -1,313 +1,451 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
+    <head>
+        <title>Resume</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="./style.css" rel="stylesheet" />
+    </head>
 
-<head>
-  <title>Resume</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="UTF-8" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet" />
-  <link href="./style.css" rel="stylesheet" />
-</head>
+    <body>
+        <div class="Container">
+            <!-- TitleBlock -->
+            <div class="TitleBlock">
+                <div>
+                    <div class="TitleName">Squire (Tsung-Ying Yu)</div>
+                    <div class="TitleDescription">
+                        Computer Science and Information Engineering
+                    </div>
+                </div>
+                <div class="Contacts">
+                    <div class="ContactItem">
+                        <img
+                            class="Icon"
+                            src="./assets/icon/paragraph-solid-full.svg"
+                            alt="Blog"
+                        />
+                        <div class="ContactName">Blog:</div>
+                        <a href="https://squidspirit.com">squidspirit.com</a>
+                    </div>
+                    <div class="ContactItem">
+                        <img
+                            class="Icon"
+                            src="./assets/icon/github.png"
+                            alt="GitHub"
+                        />
+                        <div class="ContactName">GitHub:</div>
+                        <a href="https://github.com/an920107"
+                            >github.com/an920107</a
+                        >
+                    </div>
+                    <div class="ContactItem">
+                        <img
+                            class="Icon"
+                            src="./assets/icon/email.png"
+                            alt="Email"
+                        />
+                        <div class="ContactName">Email:</div>
+                        <a href="mailto:an920107@gmail.com"
+                            >an920107@gmail.com</a
+                        >
+                    </div>
+                    <div class="ContactItem">
+                        <img
+                            class="Icon"
+                            src="./assets/icon/phone.png"
+                            alt="Phone"
+                        />
+                        <div class="ContactName">Phone:</div>
+                        <a href="tel:+886911811333">+886-911-811-333</a>
+                    </div>
+                </div>
+            </div>
+            <hr />
 
-<body>
-  <div class="Container">
-    <!-- TitleBlock -->
-    <div class="TitleBlock">
-      <div>
-        <div class="TitleName">Squire (Tsung-Ying Yu)</div>
-        <div class="TitleDescription">
-          Computer Science and Information Engineering
+            <!-- Education -->
+            <div class="SectionTitle">Education</div>
+            <div class="Content">
+                Master of Computer Science and Information Engineering, National
+                Central University<br />
+                Expected Graduation Date: <i>Jan 2028</i>
+            </div>
+
+            <!-- Experience -->
+            <div class="SectionTitle">Experience</div>
+
+            <!-- LINE -->
+            <div class="ExpTitleBlock">
+                <div class="ExpTitle">
+                    <div class="ExpPosition">TECH Fresh Intern</div>
+                    <div class="ExpDescription">LINE Android Team Engineer</div>
+                </div>
+                <div class="ExpTail">
+                    <img
+                        class="Icon"
+                        src="./assets/icon/flutter.png"
+                        alt="Flutter"
+                        title="Flutter"
+                    />
+                    <img
+                        class="Icon"
+                        src="./assets/icon/kotlin.png"
+                        alt="Kotlin"
+                        title="Kotlin"
+                    />
+                    <div class="ExpDate">Jul 2024 - Jun 2026</div>
+                </div>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li>
+                        Took <b>full ownership</b> of the LINE Shopping
+                        <b>Android home widget</b> to help users stay updated on
+                        their favorite stores' active and future deals without
+                        opening the app.
+                    </li>
+                    <li>
+                        Contributed to the new <b>Discover tab</b> in the LINE
+                        app, <b>replacing the legacy Voom tab</b>, and took
+                        ownership of several <b>native modules</b> on the page.
+                    </li>
+                    <li>
+                        Refactored legacy WebView components into native Flutter
+                        modules, significantly optimizing rendering performance
+                        and user experience.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- AIlicorn -->
+            <div class="ExpTitleBlock">
+                <div class="ExpTitle">
+                    <div class="ExpPosition">CTO</div>
+                    <div class="ExpDescription">AIlicorn Co., Ltd.</div>
+                </div>
+                <div class="ExpTail">
+                    <img
+                        class="Icon"
+                        src="./assets/icon/flutter.png"
+                        alt="Flutter"
+                        title="Flutter"
+                    />
+                    <img
+                        class="Icon"
+                        src="./assets/icon/python.png"
+                        alt="Python"
+                        title="Python"
+                    />
+                    <img
+                        class="Icon"
+                        src="./assets/icon/linux.png"
+                        alt="Linux"
+                        title="Linux"
+                    />
+                    <div class="ExpDate">Sep 2023 - Aug 2025</div>
+                </div>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li>
+                        Architected an <b>end-to-end AIoT solution</b>,
+                        integrating <b>embedded systems</b> with full-stack
+                        applications and AI models;
+                        <b>established automated data pipelines</b> for
+                        continuous training.
+                    </li>
+                    <li>
+                        Oversaw the technical roadmap and development timeline,
+                        balancing feature implementation with delivery deadlines
+                        to achieve a
+                        <b>successful MVP launch</b>.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Health care website -->
+            <div class="ExpTitleBlock">
+                <div class="ExpTitle">
+                    <div class="ExpPosition">Developer</div>
+                    <div class="ExpDescription">
+                        NCU Health Care Official Website
+                    </div>
+                </div>
+                <div class="ExpTail">
+                    <img
+                        class="Icon"
+                        src="./assets/icon/nextjs.png"
+                        alt="NextJS"
+                        title="NextJS"
+                    />
+                    <img
+                        class="Icon"
+                        src="./assets/icon/python.png"
+                        alt="Python"
+                        title="Python"
+                    />
+                    <img
+                        class="Icon"
+                        src="./assets/icon/docker.png"
+                        alt="Docker"
+                        title="Docker"
+                    />
+                    <div class="ExpDate">Mar 2024 - Oct 2024</div>
+                </div>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li>
+                        Developed a comprehensive
+                        <a
+                            class="Link"
+                            href="https://health.ncu.edu.tw"
+                            target="_blank"
+                        >
+                            department website
+                        </a>
+                        featuring a dynamic announcement board, a form
+                        submission system, and a custom CMS.
+                    </li>
+                    <li>
+                        Designed and <b>implemented CI/CD pipelines</b> to
+                        automate testing and deployment, significantly boosting
+                        development efficiency and system stability.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Community & Side Project -->
+            <div class="SectionTitle">Community & Side Project</div>
+
+            <!-- Daily Algorithm & Tech Livestream Host -->
+            <div class="ExpTitleBlock">
+                <div class="ExpTitle">
+                    <div class="ExpPosition">
+                        Daily Algorithm & Tech Livestream Host
+                    </div>
+                </div>
+                <div class="ExpTail">
+                    <img
+                        class="Icon"
+                        src="./assets/icon/rust.png"
+                        alt="Rust"
+                        title="Rust"
+                    />
+                    <img
+                        class="Icon"
+                        src="./assets/icon/c-plus-plus.png"
+                        alt="C++"
+                        title="C++"
+                    />
+                    <div class="ExpDate">Nov 2025 - Present</div>
+                </div>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li>
+                        Hosted
+                        <a
+                            class="Link"
+                            href="https://www.youtube.com/@squidspirit16/streams"
+                        >
+                            daily live coding sessions
+                        </a>
+                        , articulating problem-solving strategies and data
+                        structure choices
+                        <b>in real-time</b> to audience.
+                    </li>
+                    <li>
+                        Fostered a learning environment by exploring emerging
+                        tech trends and AI implications, while sharing hands-on
+                        tooling experiences and career advice.
+                    </li>
+                    <li>
+                        Developed a
+                        <a class="Link" href="https://squidspirit.com">
+                            personal blog website
+                        </a>
+                        featuring a comprehensive CMS, utilizing modern
+                        frameworks such as Svelte and Rust (Actix-web).
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Minecraft Server Installer -->
+            <div class="ExpTitleBlock">
+                <div class="ExpTitle">
+                    <div class="ExpPosition">Minecraft Server Installer</div>
+                </div>
+                <div class="ExpTail">
+                    <img
+                        class="Icon"
+                        src="./assets/icon/c-sharp.png"
+                        alt="C#"
+                        title="C#"
+                    />
+                    <div class="ExpDate">Apr 2020</div>
+                </div>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li>
+                        Developed a feature-rich Minecraft Server Installer with
+                        dependency management and a self-updating mechanism.
+                    </li>
+                    <li>
+                        Achieved significant community traction with
+                        <b>over 350,000 views</b> on
+                        <a
+                            class="Link"
+                            href="https://www.youtube.com/watch?v=yNis5vcueQY"
+                            target="_blank"
+                        >
+                            YouTube
+                        </a>
+                        , validating the tool's utility and market demand.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Competition and Certification -->
+            <div class="SectionTitle">Competition and Certification</div>
+
+            <!-- Taipei Codefest Hackathon -->
+            <div class="ExpTitleBlock">
+                <div class="ExpTitle">
+                    <div class="ExpPosition">Merit Award</div>
+                    <div class="ExpDescription">2025 Fall Taipei Codefest</div>
+                </div>
+                <div class="ExpTail">
+                    <img
+                        class="Icon"
+                        src="./assets/icon/flutter.png"
+                        alt="Flutter"
+                        title="Flutter"
+                    />
+                    <div class="ExpDate">Nov 2025</div>
+                </div>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li>
+                        Developed a microservice for the "Taipei Pass" municipal
+                        app, integrating <b>mobile accelerometers</b> for
+                        gesture-based interaction (shaking) and
+                        <b>LLM models for fortune interpretation</b>.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CSMU -->
+            <div class="ExpTitleBlock">
+                <div class="ExpTitle">
+                    <div class="ExpPosition">First Place</div>
+                    <div class="ExpDescription">
+                        CSMU Entrepreneurship Competition
+                    </div>
+                </div>
+
+                <div class="ExpTail">
+                    <img
+                        class="Icon"
+                        src="./assets/icon/python.png"
+                        alt="Python"
+                        title="Python"
+                    />
+                    <img
+                        class="Icon"
+                        src="./assets/icon/linux.png"
+                        alt="Linux"
+                        title="Linux"
+                    />
+                    <div class="ExpDate">Dec 2023</div>
+                </div>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li>
+                        As CTO, spearheaded the MVP and led the technical
+                        demonstration that secured 1st Place.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Meichu Hackathon -->
+            <div class="ExpTitleBlock">
+                <div class="ExpTitle">
+                    <div class="ExpPosition">Second Place</div>
+                    <div class="ExpDescription">
+                        Team LINE of 2023 Meichu Hackathon
+                    </div>
+                </div>
+                <div class="ExpTail">
+                    <img
+                        class="Icon"
+                        src="./assets/icon/flutter.png"
+                        alt="Flutter"
+                        title="Flutter"
+                    />
+                    <img
+                        class="Icon"
+                        src="./assets/icon/python.png"
+                        alt="Python"
+                        title="Python"
+                    />
+                    <div class="ExpDate">Oct 2023</div>
+                </div>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li>
+                        Implemented <b>RAG-based</b>
+                        <a
+                            class="Link"
+                            href="https://github.com/quan0715/NCU_Student_Helper"
+                            target="_blank"
+                        >
+                            NCU Student Helper
+                        </a>
+                        , using <b>LangChain</b> and OpenAI to retrieve
+                        real-time data from the school administrative system,
+                        delivering personalized student updates through a LINE
+                        Bot interface.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CPE -->
+            <div class="ExpTitleBlock">
+                <div class="ExpTitle">
+                    <div class="ExpPosition">Professional Rank</div>
+                    <div class="ExpDescription">
+                        Collegiate Programming Examination
+                    </div>
+                </div>
+                <div class="ExpTail">
+                    <img
+                        class="Icon"
+                        src="./assets/icon/c-plus-plus.png"
+                        alt="C++"
+                        title="C++"
+                    />
+                    <div class="ExpDate">Mar 2020</div>
+                </div>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li>
+                        Ranked in the <b>top 5%</b> in the National Collegiate
+                        Programming Examination, validating strong
+                        problem-solving capabilities under time constraints.
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="Contacts">
-        <div class="ContactItem">
-          <img class="Icon" src="./assets/icon/paragraph-solid-full.svg" alt="Blog" />
-          <div class="ContactName">Blog:</div>
-          <a href="https://squidspirit.com">squidspirit.com</a>
-        </div>
-        <div class="ContactItem">
-          <img class="Icon" src="./assets/icon/github.png" alt="GitHub" />
-          <div class="ContactName">GitHub:</div>
-          <a href="https://github.com/an920107">github.com/an920107</a>
-        </div>
-        <div class="ContactItem">
-          <img class="Icon" src="./assets/icon/email.png" alt="Email" />
-          <div class="ContactName">Email:</div>
-          <a href="mailto:an920107@gmail.com">an920107@gmail.com</a>
-        </div>
-        <div class="ContactItem">
-          <img class="Icon" src="./assets/icon/phone.png" alt="Phone" />
-          <div class="ContactName">Phone:</div>
-          <a href="tel:+886911811333">+886-911-811-333</a>
-        </div>
-      </div>
-    </div>
-    <hr />
-
-    <!-- Education -->
-    <div class="SectionTitle">Education</div>
-    <div class="Content">
-      Master of Computer Science and Information Engineering, National Central
-      University<br />
-      Expected Graduation Date: <i>Jan 2028</i>
-    </div>
-
-    <!-- Experience -->
-    <div class="SectionTitle">Experience</div>
-
-    <!-- LINE -->
-    <div class="ExpTitleBlock">
-      <div class="ExpTitle">
-        <div class="ExpPosition">TECH Fresh Intern</div>
-        <div class="ExpDescription">LINE Android Team Engineer</div>
-      </div>
-      <div class="ExpTail">
-        <img class="Icon" src="./assets/icon/flutter.png" alt="Flutter" title="Flutter" />
-        <img class="Icon" src="./assets/icon/kotlin.png" alt="Kotlin" title="Kotlin" />
-        <div class="ExpDate">Jul 2024 - Jun 2026</div>
-      </div>
-    </div>
-    <div class="Content">
-      <ul>
-        <li>
-          Took <b>full ownership</b> of the LINE Shopping
-          <b>Android home widget</b> to help users stay updated on their
-          favorite stores' active and future deals without opening the app.
-        </li>
-        <li>
-          Contributed to the new <b>Discover tab</b> in the LINE app,
-          <b>replacing the legacy Voom tab</b>, and took ownership of several
-          <b>native modules</b> on the page.
-        </li>
-        <li>
-          Refactored legacy WebView components into native Flutter modules,
-          significantly optimizing rendering performance and user experience.
-        </li>
-      </ul>
-    </div>
-
-    <!-- AIlicorn -->
-    <div class="ExpTitleBlock">
-      <div class="ExpTitle">
-        <div class="ExpPosition">CTO</div>
-        <div class="ExpDescription">AIlicorn Co., Ltd.</div>
-      </div>
-      <div class="ExpTail">
-        <img class="Icon" src="./assets/icon/flutter.png" alt="Flutter" title="Flutter" />
-        <img class="Icon" src="./assets/icon/python.png" alt="Python" title="Python" />
-        <img class="Icon" src="./assets/icon/linux.png" alt="Linux" title="Linux" />
-        <div class="ExpDate">Sep 2023 - Aug 2025</div>
-      </div>
-    </div>
-    <div class="Content">
-      <ul>
-        <li>
-          Architected an <b>end-to-end AIoT solution</b>, integrating
-          <b>embedded systems</b> with full-stack applications and AI models;
-          <b>established automated data pipelines</b> for continuous training.
-        </li>
-        <li>
-          Oversaw the technical roadmap and development timeline, balancing
-          feature implementation with delivery deadlines to achieve a
-          <b>successful MVP launch</b>.
-        </li>
-      </ul>
-    </div>
-
-    <!-- Health care website -->
-    <div class="ExpTitleBlock">
-      <div class="ExpTitle">
-        <div class="ExpPosition">Developer</div>
-        <div class="ExpDescription">NCU Health Care Official Website</div>
-      </div>
-      <div class="ExpTail">
-        <img class="Icon" src="./assets/icon/nextjs.png" alt="NextJS" title="NextJS" />
-        <img class="Icon" src="./assets/icon/python.png" alt="Python" title="Python" />
-        <img class="Icon" src="./assets/icon/docker.png" alt="Docker" title="Docker" />
-        <div class="ExpDate">Mar 2024 - Oct 2024</div>
-      </div>
-    </div>
-    <div class="Content">
-      <ul>
-        <li>
-          Developed a comprehensive
-          <a class="Link" href="https://health.ncu.edu.tw" target="_blank">
-            department website
-          </a>
-          featuring a dynamic announcement board, a form submission system,
-          and a custom CMS.
-        </li>
-        <li>
-          Designed and <b>implemented CI/CD pipelines</b> to automate testing
-          and deployment, significantly boosting development efficiency and
-          system stability.
-        </li>
-      </ul>
-    </div>
-
-    <!-- Community & Side Project -->
-    <div class="SectionTitle">Community & Side Project</div>
-
-    <!-- Daily Algorithm & Tech Livestream Host -->
-    <div class="ExpTitleBlock">
-      <div class="ExpTitle">
-        <div class="ExpPosition">Daily Algorithm & Tech Livestream Host</div>
-      </div>
-      <div class="ExpTail">
-        <img class="Icon" src="./assets/icon/rust.png" alt="Rust" title="Rust" />
-        <img class="Icon" src="./assets/icon/c-plus-plus.png" alt="C++" title="C++" />
-        <div class="ExpDate">Nov 2025 - Present</div>
-      </div>
-    </div>
-    <div class="Content">
-      <ul>
-        <li>
-          Hosted
-          <a class="Link" href="https://www.youtube.com/@squidspirit16/streams">
-            daily live coding sessions
-          </a>
-          , articulating problem-solving strategies and data structure choices
-          <b>in real-time</b> to audience.
-        </li>
-        <li>
-          Fostered a learning environment by exploring emerging tech trends
-          and AI implications, while sharing hands-on tooling experiences and
-          career advice.
-        </li>
-        <li>
-          Developed a
-          <a class="Link" href="https://squidspirit.com">
-              personal blog website
-          </a>
-          featuring a comprehensive CMS,
-          utilizing modern frameworks such as Svelte and Rust (Actix-web).
-        </li>
-      </ul>
-    </div>
-
-    <!-- Minecraft Server Installer -->
-    <div class="ExpTitleBlock">
-      <div class="ExpTitle">
-        <div class="ExpPosition">Minecraft Server Installer</div>
-      </div>
-      <div class="ExpTail">
-        <img class="Icon" src="./assets/icon/c-sharp.png" alt="C#" title="C#" />
-        <div class="ExpDate">Apr 2020</div>
-      </div>
-    </div>
-    <div class="Content">
-      <ul>
-        <li>
-          Developed a feature-rich Minecraft Server Installer with dependency
-          management and a self-updating mechanism.
-        </li>
-        <li>
-          Achieved significant community traction with
-          <b>over 350,000 views</b> on
-          <a class="Link" href="https://www.youtube.com/watch?v=yNis5vcueQY" target="_blank">
-            YouTube
-          </a>
-          , validating the tool's utility and market demand.
-        </li>
-      </ul>
-    </div>
-
-    <!-- Competition and Certification -->
-    <div class="SectionTitle">Competition and Certification</div>
-
-    <!-- Taipei Codefest Hackathon -->
-    <div class="ExpTitleBlock">
-      <div class="ExpTitle">
-        <div class="ExpPosition">Merit Award</div>
-        <div class="ExpDescription">2025 Fall Taipei Codefest</div>
-      </div>
-      <div class="ExpTail">
-        <img class="Icon" src="./assets/icon/flutter.png" alt="Flutter" title="Flutter" />
-        <div class="ExpDate">Nov 2025</div>
-      </div>
-    </div>
-    <div class="Content">
-      <ul>
-        <li>
-          Developed a microservice for the "Taipei Pass" municipal app,
-          integrating <b>mobile accelerometers</b> for gesture-based
-          interaction (shaking) and
-          <b>LLM models for fortune interpretation</b>.
-        </li>
-      </ul>
-    </div>
-
-    <!-- CSMU -->
-    <div class="ExpTitleBlock">
-      <div class="ExpTitle">
-        <div class="ExpPosition">First Place</div>
-        <div class="ExpDescription">CSMU Entrepreneurship Competition</div>
-      </div>
-
-      <div class="ExpTail">
-        <img class="Icon" src="./assets/icon/python.png" alt="Python" title="Python" />
-        <img class="Icon" src="./assets/icon/linux.png" alt="Linux" title="Linux" />
-        <div class="ExpDate">Dec 2023</div>
-      </div>
-    </div>
-    <div class="Content">
-      <ul>
-        <li>
-          As CTO, spearheaded the MVP and led the technical demonstration that
-          secured 1st Place.
-        </li>
-      </ul>
-    </div>
-
-    <!-- Meichu Hackathon -->
-    <div class="ExpTitleBlock">
-      <div class="ExpTitle">
-        <div class="ExpPosition">Second Place</div>
-        <div class="ExpDescription">Team LINE of 2023 Meichu Hackathon</div>
-      </div>
-      <div class="ExpTail">
-        <img class="Icon" src="./assets/icon/flutter.png" alt="Flutter" title="Flutter" />
-        <img class="Icon" src="./assets/icon/python.png" alt="Python" title="Python" />
-        <div class="ExpDate">Oct 2023</div>
-      </div>
-    </div>
-    <div class="Content">
-      <ul>
-        <li>
-          Implemented <b>RAG-based</b>
-          <a class="Link" href="https://github.com/quan0715/NCU_Student_Helper" target="_blank">
-            NCU Student Helper
-          </a>
-          , using <b>LangChain</b> and OpenAI to retrieve real-time data from
-          the school administrative system, delivering personalized student
-          updates through a LINE Bot interface.
-        </li>
-      </ul>
-    </div>
-
-    <!-- CPE -->
-    <div class="ExpTitleBlock">
-      <div class="ExpTitle">
-        <div class="ExpPosition">Professional Rank</div>
-        <div class="ExpDescription">Collegiate Programming Examination</div>
-      </div>
-      <div class="ExpTail">
-        <img class="Icon" src="./assets/icon/c-plus-plus.png" alt="C++" title="C++" />
-        <div class="ExpDate">Mar 2020</div>
-      </div>
-    </div>
-    <div class="Content">
-      <ul>
-        <li>
-          Ranked in the <b>top 5%</b> in the National Collegiate Programming
-          Examination, validating strong problem-solving capabilities under
-          time constraints.
-        </li>
-      </ul>
-    </div>
-  </div>
-</body>
-
+    </body>
 </html>
