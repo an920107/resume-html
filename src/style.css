@@ -45,7 +45,7 @@ hr {
 
 .ContactItem {
     display: grid;
-    grid-template-columns: 2fr 5fr 12fr;
+    grid-template-columns: 5fr 12fr;
     align-items: center;
 }
 
@@ -60,7 +60,7 @@ hr {
 }
 
 .SectionTitle {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 800;
     margin-bottom: 0.5em;
     color: #333;
