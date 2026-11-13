@@ -156,7 +156,7 @@ hr {
     }
 
     .ContactItem {
-        grid-template-columns: 24px 60px 1fr;
+        grid-template-columns: 60px 1fr;
         gap: 8px;
     }
 
