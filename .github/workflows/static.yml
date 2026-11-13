@@ -31,6 +31,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      # Cloudflare 會快取 .css（檔名固定時更新內容仍可能拿到舊版），
+      # 因此在部署前把 commit hash 注入 CSS 網址，讓每次部署都是新的 cache key。
+      - name: Add cache-busting version to CSS link
+        run: |
+          sed -i -E "s|(href=\"\./style\.css)(\?v=[0-9a-f]+)?\"|\1?v=${GITHUB_SHA:0:7}\"|" ./src/index.html
+          grep -n 'style\.css' ./src/index.html
+          # 若 index.html 的 link 格式改變導致替換失敗，讓部署直接失敗，避免又部署出舊快取。
+          grep -qE 'style\.css\?v=[0-9a-f]{7}' ./src/index.html || { echo '::error::failed to inject cache-busting version into src/index.html'; exit 1; }
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
